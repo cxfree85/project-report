@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI即時預測服務監控平台 - 專案報告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #020617; /* slate-950 */
+            color: #d1d5db; /* gray-300 */
+        }
+        .section-title {
+            @apply text-3xl sm:text-4xl font-bold text-sky-400 mb-4 text-center;
+        }
+        .section-subtitle {
+            @apply text-lg sm:text-xl text-slate-400 mb-12 text-center max-w-3xl mx-auto;
+        }
+        .card {
+            @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 transition-all duration-300 hover:bg-slate-700/70 hover:border-sky-500;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="bg-slate-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">
+                <span class="text-sky-400">AI</span> 預測平台
+            </div>
+            <div class="hidden md:flex space-x-6 text-lg">
+                <a href="#purpose" class="hover:text-sky-400 transition-colors">開發目的</a>
+                <a href="#features" class="hover:text-sky-400 transition-colors">核心特點</a>
+                <a href="#functions" class="hover:text-sky-400 transition-colors">功能詳解</a>
+                <a href="#examples" class="hover:text-sky-400 transition-colors">應用範例</a>
+                <a href="#outlook" class="hover:text-sky-400 transition-colors">未來展望</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] sm:h-[80vh] flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 bg-slate-900 opacity-50"></div>
+            <div class="absolute inset-0 bg-grid-slate-700/[0.05]"></div>
+             <img src="https://placehold.co/1920x1080/020617/0ea5e9?text= " alt="背景圖" class="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm">
+            <div class="relative z-10 px-4">
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-white leading-tight">
+                    AI 即時預測服務監控平台
+                </h1>
+                <p class="mt-6 text-xl sm:text-2xl text-slate-300 max-w-4xl mx-auto">
+                    智慧廠務的數位轉型基石 — 將數據轉化為洞察，用預測驅動未來
+                </p>
+                <div class="mt-10">
+                    <a href="#purpose" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform hover:scale-105">
+                        了解更多
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Purpose Section -->
+        <section id="purpose" class="py-20 sm:py-28">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">我們為何而戰？ — 開發目的</h2>
+                <p class="section-subtitle">面對傳統維護模式的挑戰，我們旨在打造一個能將數據價值最大化的智慧平台，實現從被動反應到主動預測的轉變。</p>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div class="card">
+                            <h3 class="text-2xl font-bold text-red-400 mb-3">核心痛點</h3>
+                            <ul class="space-y-2 text-lg">
+                                <li class="flex items-start"><span class="mr-3 text-red-400">●</span><span><b>預防勝於治療：</b>傳統維護模式成本高昂，無法預知潛在風險。</span></li>
+                                <li class="flex items-start"><span class="mr-3 text-red-400">●</span><span><b>數據孤島：</b>大量生產數據未能有效利用，價值被埋沒。</span></li>
+                                <li class="flex items-start"><span class="mr-3 text-red-400">●</span><span><b>決策延遲：</b>依賴人工判斷，反應速度慢，錯失處理良機。</span></li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3 class="text-2xl font-bold text-green-400 mb-3">開發目標</h3>
+                            <ul class="space-y-2 text-lg">
+                                <li class="flex items-start"><span class="mr-3 text-green-400">●</span><span><b>賦能預測：</b>將歷史數據轉化為預測能力，實現預防性維護。</span></li>
+                                <li class="flex items-start"><span class="mr-3 text-green-400">●</span><span><b>整合數據：</b>打造集中管理、訓練、部署及監控 AI 模型的平台。</span></li>
+                                <li class="flex items-start"><span class="mr-3 text-green-400">●</span><span><b>加速決策：</b>提供即時、直觀的數據洞察，輔助工程師快速反應。</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x500/1e293b/94a3b8?text=從問題到解決方案" alt="從問題到解決方案的示意圖" class="rounded-xl shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Features Section -->
+        <section id="features" class="py-20 sm:py-28 bg-slate-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">為何選擇我們？ — 四大核心特點</h2>
+                <p class="section-subtitle">本平台不僅是工具，更是一套完整的工作流程，旨在簡化 AI 導入的複雜性，讓數據科學真正落地。</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="card text-center items-center flex flex-col">
+                        <div class="text-5xl mb-4">📦</div>
+                        <h3 class="text-2xl font-bold text-teal-300 mb-3">一站式整合</h3>
+                        <p class="text-slate-300">從模型訓練、部署到監控與分析，所有流程在單一平台完成，無須切換工具。</p>
+                    </div>
+                    <div class="card text-center items-center flex flex-col">
+                        <div class="text-5xl mb-4">🔧</div>
+                        <h3 class="text-2xl font-bold text-teal-300 mb-3">高度彈性化</h3>
+                        <p class="text-slate-300">支援10個獨立預測通道，滿足即時/未來等多樣預測場景，並可進行 A/B 測試。</p>
+                    </div>
+                    <div class="card text-center items-center flex flex-col">
+                        <div class="text-5xl mb-4">🖱️</div>
+                        <h3 class="text-2xl font-bold text-teal-300 mb-3">操作直覺化</h3>
+                        <p class="text-slate-300">全圖形化介面，大幅降低 AI 技術門檻，讓領域專家也能輕鬆上手。</p>
+                    </div>
+                    <div class="card text-center items-center flex flex-col">
+                        <div class="text-5xl mb-4">📊</div>
+                        <h3 class="text-2xl font-bold text-teal-300 mb-3">決策數據化</h3>
+                        <p class="text-slate-300">即時趨勢圖與歷史分析報告，讓每一個維護與優化決策都有堅實的數據支撐。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Functions Section -->
+        <section id="functions" class="py-20 sm:py-28">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">功能詳解 — AI生命週期的完整覆蓋</h2>
+                <p class="section-subtitle">我們將複雜的機器學習流程拆解為四個核心模組，讓您能輕鬆駕馭 AI 的力量。</p>
+                <div class="space-y-16">
+                    <!-- Function 1: Retraining -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 md:order-1">
+                            <h3 class="text-3xl font-bold text-white mb-4">1. 模型再訓練中心</h3>
+                            <p class="text-lg mb-6">打造您專屬的預測大腦。無論您的數據來自本地 CSV 或是 Historian 資料庫，只需幾個步驟，平台內建的 AutoML 機制就能自動完成特徵工程、演算法比較與模型優化，產出高效能的預測模型。</p>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>多元資料來源支援</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>智慧參數建議與自動化模型訓練</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>一鍵註冊，無縫接軌模型庫</li>
+                            </ul>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="https://placehold.co/600x400/1e293b/94a3b8?text=模型再訓練中心" alt="模型再訓練中心示意圖" class="rounded-xl shadow-lg">
+                        </div>
+                    </div>
+                    <!-- Function 2: Registry -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <img src="https://placehold.co/600x400/1e293b/94a3b8?text=模型庫與部署" alt="模型庫與部署示意圖" class="rounded-xl shadow-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-white mb-4">2. 模型庫與部署</h3>
+                            <p class="text-lg mb-6">您的 AI 軍火庫。所有訓練好的模型都會集中在此管理，包含詳細的效能指標與版本資訊。只需在預測通道中點擊幾下，就能將模型部署上線，或設定 A/B 測試來比較不同模型的實際表現。</p>
+                             <ul class="space-y-2 text-slate-300">
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>集中化模型版本與效能管理</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>支援外部模型匯入，擴充性強</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>一鍵部署與 A/B 測試設定</li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Function 3: Monitoring -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 md:order-1">
+                            <h3 class="text-3xl font-bold text-white mb-4">3. 即時監控作戰室</h3>
+                            <p class="text-lg mb-6">掌握當下，預見未來。全局儀表板提供所有通道的鳥瞰視圖，而每個獨立通道則深入顯示即時預測值、誤差與趨勢圖，讓您對系統的健康狀況瞭若指掌。</p>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>全局狀態監控，異常即時發現</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>即時趨勢圖，視覺化模型表現</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>詳細預測歷史紀錄，方便追溯</li>
+                            </ul>
+                        </div>
+                        <div class="order-1 md:order-2">
+                            <img src="https://placehold.co/600x400/1e293b/94a3b8?text=即時監控" alt="即時監控示意圖" class="rounded-xl shadow-lg">
+                        </div>
+                    </div>
+                     <!-- Function 4: Analysis -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <img src="https://placehold.co/600x400/1e293b/94a3b8?text=歷史分析" alt="歷史分析示意圖" class="rounded-xl shadow-lg">
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-white mb-4">4. 歷史數據分析</h3>
+                            <p class="text-lg mb-6">以史為鏡，持續優化。最新的歷史分析功能讓您能深入挖掘過去的數據，回測模型在特定時間區段的表現，並透過統計報告與誤差分佈圖，找到模型優化的關鍵方向。</p>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>自訂時間區間，回測歷史表現</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>一鍵生成統計分析報告 (R², MAE)</li>
+                                <li class="flex"><svg class="w-6 h-6 mr-2 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>視覺化誤差分佈，洞察模型偏誤</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="py-20 sm:py-28 bg-slate-900">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">應用範例 — 智慧廠務的無限可能</h2>
+                <p class="section-subtitle">本平台已成功應用於多個關鍵廠務系統，展現其強大的預測能力與商業價值。</p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="card">
+                        <img src="https://placehold.co/600x350/1e293b/94a3b8?text=冰水主機" alt="冰水主機示意圖" class="rounded-lg mb-6 w-full">
+                        <h3 class="text-2xl font-bold text-white mb-3">冰水主機出水溫度預測</h3>
+                        <p class="text-lg mb-4">預測30分鐘後的出水溫度，提前調控主機負載，實現預防性節能，並透過長期誤差監控，預警設備效能衰退。</p>
+                        <div class="text-teal-300 font-semibold">#節能減碳 #預防保養</div>
+                    </div>
+                    <div class="card">
+                        <img src="https://placehold.co/600x350/1e293b/94a3b8?text=純水系統" alt="純水系統示意圖" class="rounded-lg mb-6 w-full">
+                        <h3 class="text-2xl font-bold text-white mb-3">純水系統產水率預測</h3>
+                        <p class="text-lg mb-4">預測未來1小時的純水產水量，提前調度儲水槽，確保生產線用水穩定，並作為更換 RO 膜等耗材的決策依據。</p>
+                        <div class="text-teal-300 font-semibold">#穩定生產 #耗材管理</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Outlook Section -->
+        <section id="outlook" class="py-20 sm:py-28">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">我們的下一步 — 未來展望</h2>
+                <p class="section-subtitle">技術的演進永無止境，我們將持續為平台注入更多創新功能，拓展其應用邊界。</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-teal-300 mb-3">模型優化</h3>
+                        <p>引入 LSTM, GRU 等深度學習模型，並增加模型自動再訓練與部署的排程功能。</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-teal-300 mb-3">平台功能擴充</h3>
+                        <p>整合事件警報系統，誤差超標時自動發送通知，並開發 Web 版本實現遠端監控。</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-teal-300 mb-3">應用場景拓展</h3>
+                        <p>從廠務系統拓展至製程參數預測以提升良率，甚至應用於供應鏈管理預測物料需求。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+            <p class="text-lg font-bold">AI 即時預測服務監控平台</p>
+            <p class="mt-2">© 2025 群創光電 / 廠務部門. All Rights Reserved.</p>
+            <p class="mt-1">共同開發: 陳郁中 & Gemini AI</p>
+        </div>
+    </footer>
+
+</body>
+</html>
